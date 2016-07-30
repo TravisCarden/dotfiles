@@ -3,6 +3,7 @@
 - name: Install Mac App Store apps.
   shell: mas list | grep {{ item }} || mas install {{ item }}
   with_items:
+    - 411246225 # Caffeine
     - 489690915 # My Medical
     - 407963104 # Pixelmator
   register: result
