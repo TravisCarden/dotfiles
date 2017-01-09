@@ -17,9 +17,7 @@ function anybar {
 }
 
 function source_if_exists() {
-  if [ -f $1 ]; then
-    source $1
-  fi
+  test -e $1 && source $1
 }
 
 # Aliases.
