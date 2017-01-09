@@ -53,26 +53,13 @@ if [ -n "$(type -t __git_ps1)" ] && [ "$(type -t __git_ps1)" = function ] && [ "
     __DRUPAL_SITE="${ENV_COLOR}${__DRUPAL_SITE}${COLOR_NONE}"
   }
 
-  export PROMPT_COMMAND='\
-GIT_PS1_SHOWCOLORHINTS=true
-GIT_PS1_SHOWDIRTYSTATE=true
-GIT_PS1_SHOWUNTRACKEDFILES=true
-GIT_PS1_SHOWUPSTREAM=auto
-GIT_PS1_SHOWSTASHSTATE=true
-DRUSH_PS1_SHOWCOLORHINTS=true
-# PS1:
-__git_ps1 "${COLOR_BLUE}\T $(pwd)${COLOR_NONE}
-${COLOR_WHITE}\u@\h${COLOR_NONE}" "$(__drush_ps1 " [%s]") \\\$ "
+  GIT_PS1_SHOWCOLORHINTS=true
+  GIT_PS1_SHOWDIRTYSTATE=true
+  GIT_PS1_SHOWUNTRACKEDFILES=true
+  GIT_PS1_SHOWUPSTREAM=auto
+  GIT_PS1_SHOWSTASHSTATE=true
+  DRUSH_PS1_SHOWCOLORHINTS=true
 
-GIT_PS1_SHOWCOLORHINTS=
-GIT_PS1_SHOWDIRTYSTATE=
-GIT_PS1_SHOWUNTRACKEDFILES=
-GIT_PS1_SHOWUPSTREAM=
-GIT_PS1_SHOWSTASHSTATE=
-DRUSH_PS1_SHOWCOLORHINTS=
-# Xterm title maximized:
-echo -ne "\033]0;$(dir_details)$(__git_ps1)$(__drush_ps1 " [%s]")\007";\
-# Xterm title minimized:
-echo -ne "\033]1;$(dir_details)\007"'
+  export PROMPT_COMMAND='__git_ps1 "${COLOR_BLUE}\T \w${COLOR_NONE}" "$(__drush_ps1 " [%s]") \\\$ "'
 
 fi
