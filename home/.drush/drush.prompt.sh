@@ -60,6 +60,6 @@ if [ -n "$(type -t __git_ps1)" ] && [ "$(type -t __git_ps1)" = function ] && [ "
   GIT_PS1_SHOWSTASHSTATE=true
   DRUSH_PS1_SHOWCOLORHINTS=true
 
-  export PROMPT_COMMAND='__git_ps1 "${COLOR_BLUE}\T \w${COLOR_NONE}" "$(__drush_ps1 " [%s]") \\\$ "'
+  export PROMPT_COMMAND='__git_ps1 "${COLOR_BLUE}$(date +%r) \w${COLOR_NONE}" "$(__drush_ps1 " [%s]") \\\$ "'
 
 fi
