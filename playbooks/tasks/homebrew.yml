@@ -18,6 +18,8 @@
     - git
     - mas
     - node4-lts
+    - npm
+    - nvm
     - php56
     - the_silver_searcher
     - ruby

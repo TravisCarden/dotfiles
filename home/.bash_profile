@@ -34,6 +34,7 @@ source_if_exists ~/Projects/drush/drush.complete.sh
 source_if_exists `brew --prefix`/etc/bash_completion.d/git-prompt.sh
 source_if_exists ~/.drush/drush.prompt.sh
 source_if_exists ~/.iterm2_shell_integration.bash
+source_if_exists /usr/local/opt/nvm/nvm.sh
 
 # Completion.
 source_if_exists `brew --prefix`/etc/bash_completion
@@ -46,6 +47,9 @@ shopt -s histappend
 
 # Add Homebrew's sbin to PATH.
 export PATH="/usr/local/sbin:$PATH"
+
+# Node.
+export NVM_DIR="$HOME/.nvm"
 
 # Non-public features.
 source_if_exists ~/Dropbox/.bash_secret
