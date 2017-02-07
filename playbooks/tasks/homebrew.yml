@@ -12,6 +12,7 @@
   homebrew: name={{ item }} state=present
   with_items:
     - bash-completion
+    - chromedriver
     - composer
     - composer-completion
     - dos2unix
