@@ -36,10 +36,10 @@ if [ -n "$(type -t __git_ps1)" ] && [ "$(type -t __git_ps1)" = function ] && [ "
     fi
 
     DIR_DETAILS=${DIR_DETAILS}${PWD##*/}
-    if [ -z ${DIR_DETAILS} ]; then
+    if [ -z "$DIR_DETAILS" ]; then
       pwd
     else
-      echo ${DIR_DETAILS}
+      echo "$DIR_DETAILS"
     fi
   }
 
