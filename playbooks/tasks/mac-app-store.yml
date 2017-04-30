@@ -3,8 +3,11 @@
 - name: Install Mac App Store apps.
   shell: mas list | grep {{ item }} || mas install {{ item }}
   with_items:
-    - 411246225 # Caffeine
+    - 937984704 # Amphetamine
+    - 472790630 # Bible Study
+    - 506189836 # Harvest
     - 489690915 # My Medical
     - 407963104 # Pixelmator
+    - 425424353 # The Unarchiver
   register: result
   changed_when: result.stdout.find('Installed') != -1

@@ -11,17 +11,18 @@
 - name: Install Homebrew packages.
   homebrew: name={{ item }} state=present
   with_items:
+    - ansible
     - bash-completion
-    - chromedriver
     - composer
-    - composer-completion
     - dos2unix
     - git
+    - hub
     - mas
     - node4-lts
     - npm
     - nvm
     - php56
+    - php56-xdebug
     - the_silver_searcher
     - ruby
     - wget
@@ -30,9 +31,9 @@
   homebrew_cask: name={{ item }} state=present
   with_items:
     - 1password
-    - adium
     - alfred
     - appcleaner
+    - atext
     - atom
     - bartender
     - calibre
@@ -41,18 +42,23 @@
     - fantastical
     - firefox
     - fliqlo
+    - fluid
     - flux
+    - gemini
     - google-chrome
     - hipchat
     - hyperswitch
     - imageoptim
+    - integrity
     - iterm2
     - java
     - jetbrains-toolbox
-    - keepassx
     - kindle
     - logitech-control-center
-    - macpaw-gemini
+    - mailplane
+    - omnifocus
+    - overdrive-media-console
+    - rambox
     - sequel-pro
     - skype
     - slack
@@ -63,4 +69,6 @@
     - vagrant
     - virtualbox
     - viscosity
+    - vlc
+    - xee
     - zoomus

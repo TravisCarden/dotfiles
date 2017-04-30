@@ -2,30 +2,30 @@
 
 - name: Clone repo.
   git:
-    repo=git@github.com:drush-ops/drush.git
-    dest=~/Projects/drush
+    repo=https://github.com/drush-ops/drush.git
+    dest=~/Projects/Work/drush
     remote=drush-ops
     update=no
 
 - name: Add remote for personal fork.
   shell: git remote add me git@github.com:TravisCarden/drush.git
   args:
-    chdir: ~/Projects/drush
+    chdir: ~/Projects/Work/drush
   register: result
   changed_when: result.rc != 128
   failed_when: false
 
 - name: Configure user email.
-  git_config: name=user.email repo=~/Projects/drush scope=local value=travis.carden@gmail.com
+  git_config: name=user.email repo=~/Projects/Work/drush scope=local value=travis.carden@gmail.com
 
 - name: Install Composer packages.
   shell: >
     /usr/local/bin/composer install
-    chdir=~/Projects/drush
-    creates=~/Projects/drush/vendor/autoload.php
+    chdir=~/Projects/Work/drush
+    creates=~/Projects/Work/drush/vendor/autoload.php
 
 - name: Symlink executable.
   file:
-    src: ~/Projects/drush/drush
+    src: ~/Projects/Work/drush/drush
     path: /usr/local/bin/drush
     state: link
