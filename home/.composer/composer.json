@@ -1,0 +1,5 @@
+{
+    "require": {
+        "bamarni/symfony-console-autocomplete": "^1.2"
+    }
+}
