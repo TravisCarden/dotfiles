@@ -1,5 +1,10 @@
 ---
 
+- name: Upgrade outdated apps from the Mac App Store.
+  shell: mas upgrade
+  register: result
+  changed_when: result.stdout.find('Everything is up-to-date') != 0
+
 - name: Install Mac App Store apps.
   shell: mas list | grep {{ item }} || mas install {{ item }}
   with_items:
