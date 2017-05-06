@@ -31,7 +31,6 @@ source_if_exists /usr/local/opt/nvm/nvm.sh
 
 # Completion.
 source_if_exists `brew --prefix`/etc/bash_completion
-eval "$(symfony-autocomplete)" # https://github.com/bamarni/symfony-console-autocomplete
 
 # History. See bash(1).
 HISTCONTROL=ignoreboth
@@ -41,7 +40,6 @@ shopt -s histappend
 
 # Path.
 export PATH="/usr/local/sbin:$PATH" # Homebrew
-export PATH="$PATH:$(composer global config bin-dir --absolute)" # Composer
 
 # Node.
 export NVM_DIR="$HOME/.nvm"
