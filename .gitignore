@@ -3,6 +3,7 @@
 home/.composer/cache
 home/.composer/vendor
 home/.drush/cache/
+home/.drush/grn/
 home/.ssh/id_rsa
 home/.ssh/id_rsa.pub
 home/.ssh/known_hosts
