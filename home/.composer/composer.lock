@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "368aa9230abb591c6210d36da6e8d921",
+    "content-hash": "a512e009afd5ebd67005401367624c7a",
     "packages": [
         {
             "name": "bamarni/symfony-console-autocomplete",
@@ -43,6 +43,57 @@
             ],
             "description": "Shell completion for Symfony Console based scripts",
             "time": "2016-02-14T10:55:22+00:00"
+        },
+        {
+            "name": "hirak/prestissimo",
+            "version": "0.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hirak/prestissimo.git",
+                "reference": "218643bb76a06a1ae81c76fa8bbcc4101c287a2d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hirak/prestissimo/zipball/218643bb76a06a1ae81c76fa8bbcc4101c287a2d",
+                "reference": "218643bb76a06a1ae81c76fa8bbcc4101c287a2d",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0.0",
+                "ext-curl": "*",
+                "php": "^5.3.2 || ^7.0"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.0",
+                "phpunit/phpunit": "^4.8",
+                "squizlabs/php_codesniffer": "^2.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Hirak\\Prestissimo\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Hirak\\Prestissimo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hiraku NAKANO",
+                    "email": "hiraku@tojiru.net"
+                }
+            ],
+            "description": "composer parallel install plugin",
+            "keywords": [
+                "install",
+                "parallel",
+                "speedup"
+            ],
+            "time": "2017-04-14T09:04:27+00:00"
         },
         {
             "name": "psr/log",
