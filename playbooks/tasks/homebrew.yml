@@ -26,6 +26,7 @@
     - the_silver_searcher
     - ruby
     - wget
+    - yarn
 
 - name: Install Homebrew Casks.
   homebrew_cask: name={{ item }} state=present
