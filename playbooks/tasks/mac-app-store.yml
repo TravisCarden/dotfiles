@@ -15,5 +15,6 @@
     - 489690915 # My Medical
     - 407963104 # Pixelmator
     - 425424353 # The Unarchiver
+    - 410628904 # Wunderlist: To-Do List & Tasks
   register: result
   changed_when: result.stdout.find('Installed') != -1
