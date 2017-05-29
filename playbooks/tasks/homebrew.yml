@@ -3,6 +3,7 @@
 - name: Tap Homebrew repositories.
   homebrew_tap: tap={{ item }} state=present
   with_items:
+    - caskroom/drivers
     - caskroom/versions
     - homebrew/homebrew-php
     - homebrew/completions
@@ -57,6 +58,7 @@
     - kindle
     - logitech-control-center
     - mailplane
+    - netgeargenie
     - omnifocus
     - overdrive-media-console
     - sequel-pro
