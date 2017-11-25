@@ -8,6 +8,7 @@
 - name: Install Mac App Store apps.
   shell: mas list | grep {{ item }} || mas install {{ item }}
   with_items:
+    - 824183456 # Affinity Photo
     - 937984704 # Amphetamine
     - 472790630 # Bible Study
     - 1192921778 # Banktivity 6
@@ -16,7 +17,6 @@
     - 506189836 # Harvest
     - 489690915 # My Medical
     - 451907568 # Paprika Recipe Manager
-    - 407963104 # Pixelmator
     - 425424353 # The Unarchiver
     - 410628904 # Wunderlist: To-Do List & Tasks
   register: result
