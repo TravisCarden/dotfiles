@@ -26,6 +26,7 @@
     - php56-xdebug
     - the_silver_searcher
     - ruby
+    - tldr
     - tree
     - wget
     - yarn
