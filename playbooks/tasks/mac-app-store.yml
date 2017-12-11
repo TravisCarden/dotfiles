@@ -17,6 +17,7 @@
     - 506189836 # Harvest
     - 489690915 # My Medical
     - 451907568 # Paprika Recipe Manager
+    - 504700302 # PDF Squeezer
     - 425424353 # The Unarchiver
     - 410628904 # Wunderlist: To-Do List & Tasks
   register: result
