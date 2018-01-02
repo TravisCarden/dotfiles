@@ -43,6 +43,7 @@
     - cacher
     - calibre
     - db-browser-for-sqlite
+    - diffmerge
     - dropbox
     - dynalist
     - evernote
