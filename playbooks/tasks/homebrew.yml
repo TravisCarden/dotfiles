@@ -22,8 +22,8 @@
     - node4-lts
     - npm
     - nvm
-    - php56
-    - php56-xdebug
+    - php71
+    - php71-xdebug
     - the_silver_searcher
     - ruby
     - tldr
