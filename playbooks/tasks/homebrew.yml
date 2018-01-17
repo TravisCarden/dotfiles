@@ -29,7 +29,6 @@
     - tldr
     - tree
     - wget
-    - yarn
 
 - name: Install Homebrew Casks.
   homebrew_cask: name={{ item }} state=present
