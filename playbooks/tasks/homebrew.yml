@@ -19,9 +19,6 @@
     - git
     - hub
     - mas
-    - node4-lts
-    - npm
-    - nvm
     - php71
     - php71-xdebug
     - the_silver_searcher
