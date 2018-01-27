@@ -3,7 +3,7 @@
 - hosts: localhost
   connection: local
   tasks:
-  - include: tasks/{{ file }}.yml
+  - include_tasks: tasks/{{ file }}.yml
     with_items:
     - homebrew
     - gems
