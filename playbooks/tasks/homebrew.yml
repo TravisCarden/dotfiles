@@ -17,6 +17,7 @@
     - composer
     - dos2unix
     - git
+    - graphviz
     - hub
     - mas
     - php71
