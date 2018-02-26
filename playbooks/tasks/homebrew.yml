@@ -17,6 +17,7 @@
     - composer
     - dos2unix
     - git
+    - gpatch # https://docs.acquia.com/article/fixing-failing-composer-patches-updating-gnu-patch
     - graphviz
     - hub
     - mas
