@@ -6,7 +6,6 @@
     - caskroom/drivers
     - caskroom/versions
     - homebrew/homebrew-php
-    - homebrew/completions
     - homebrew/versions
 
 - name: Install Homebrew packages.
