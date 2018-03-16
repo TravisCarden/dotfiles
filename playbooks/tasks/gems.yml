@@ -4,4 +4,3 @@
   gem: name={{ item }} state=present user_install=no
   with_items:
     - bundler
-    - homesick

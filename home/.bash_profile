@@ -62,3 +62,7 @@ function blt() {
     return 1
   fi
 }
+
+# Homeshick
+export HOMESHICK_DIR=/usr/local/opt/homeshick
+source_if_exists /usr/local/opt/homeshick/homeshick.sh
