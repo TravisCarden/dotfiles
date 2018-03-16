@@ -26,8 +26,6 @@ alias git-root='cd "$(git rev-parse --show-toplevel)"'
 source_if_exists ~/Projects/Work/drush/drush.complete.sh
 source_if_exists `brew --prefix`/etc/bash_completion.d/git-prompt.sh
 source_if_exists ~/.drush/drush.prompt.sh
-source_if_exists ~/.iterm2_shell_integration.bash
-source_if_exists /usr/local/opt/nvm/nvm.sh
 
 # Completion.
 source_if_exists `brew --prefix`/etc/bash_completion
@@ -37,12 +35,6 @@ HISTCONTROL=ignoreboth
 HISTSIZE=10000
 HISTFILESIZE=20000
 shopt -s histappend
-
-# Path.
-export PATH="/usr/local/sbin:$PATH" # Homebrew
-
-# Node.
-export NVM_DIR="$HOME/.nvm"
 
 # Non-public features.
 source_if_exists ~/Dropbox/.bash_secret
@@ -63,6 +55,12 @@ function blt() {
   fi
 }
 
-# Homeshick
+# Homebrew.
+export PATH="/usr/local/sbin:$PATH"
+
+# Homeshick.
 export HOMESHICK_DIR=/usr/local/opt/homeshick
 source_if_exists /usr/local/opt/homeshick/homeshick.sh
+
+# iTerm.
+source_if_exists ~/.iterm2_shell_integration.bash
