@@ -22,5 +22,6 @@
     - 880001334 # Reeder 3
     - 425424353 # The Unarchiver
     - 410628904 # Wunderlist: To-Do List & Tasks
+    - 497799835 # Xcode
   register: result
   changed_when: result.stdout.find('Installed') != -1
