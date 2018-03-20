@@ -32,6 +32,7 @@
   with_items:
     - 1password
     - alfred
+    - android-file-transfer
     - appcleaner
     - atext
     - atom
