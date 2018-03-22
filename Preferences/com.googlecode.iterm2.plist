@@ -446,7 +446,7 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>358 263 918 512 0 0 1920 1058 </string>
+	<string>-1262 305 918 512 -1680 30 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>-1680 30 1680 1028 -1680 30 1680 1028 </string>
 	<key>New Bookmarks</key>
@@ -711,7 +711,7 @@
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
-			<string>No</string>
+			<string>Recycle</string>
 			<key>Default Bookmark</key>
 			<string>No</string>
 			<key>Disable Printing</key>
@@ -1341,7 +1341,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-17T03:17:28Z</date>
+	<date>2018-03-21T17:33:57Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
