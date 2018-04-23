@@ -19,6 +19,7 @@
     - graphviz
     - hub
     - mas
+    - node
     - php71
     - php71-xdebug
     - the_silver_searcher
