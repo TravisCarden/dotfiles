@@ -445,8 +445,10 @@
 	</data>
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
+	<key>NSWindow Frame SUUpdateAlert</key>
+	<string>-1150 507 620 392 -1680 30 1680 1028 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>-1262 305 918 512 -1680 30 1680 1028 </string>
+	<string>-1504 341 796 473 -1680 30 1680 1028 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>-1680 30 1680 1028 -1680 30 1680 1028 </string>
 	<key>New Bookmarks</key>
@@ -1341,7 +1343,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-03-21T17:33:57Z</date>
+	<date>2018-04-24T13:39:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -1349,7 +1351,7 @@
 	<key>ShowBookmarkName</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
 	<key>SmartPlacement</key>
@@ -1384,6 +1386,8 @@
 	<true/>
 	<key>UseLionStyleFullscreen</key>
 	<true/>
+	<key>UseMetal</key>
+	<true/>
 	<key>WebKitDefaultFontSize</key>
 	<integer>11</integer>
 	<key>WebKitStandardFont</key>
@@ -1401,7 +1405,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
