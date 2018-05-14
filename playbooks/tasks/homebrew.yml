@@ -10,76 +10,76 @@
 - name: Install Homebrew packages.
   homebrew: name={{ item }} state=present
   with_items:
-    - ansible
-    - bash-completion
-    - composer
-    - dos2unix
-    - git
-    - gpatch # https://docs.acquia.com/article/fixing-failing-composer-patches-updating-gnu-patch
-    - graphviz
-    - httpie
-    - hub
-    - mas
-    - node
-    - php71
+    - ansible # Automate deployment, configuration, and upgrading
+    - bash-completion # Programmable completion for Bash 3.2
+    - composer # Dependency Manager for PHP
+    - dos2unix # Convert text between DOS, UNIX, and Mac formats
+    - git # Distributed revision control system
+    - gpatch # Apply a diff file to an original
+    - graphviz # Graph visualization software from AT&T and Bell Labs
+    - httpie # User-friendly cURL replacement (command-line HTTP client)
+    - hub # Add GitHub support to git on the command-line
+    - mas # Mac App Store command-line interface
+    - node # Platform built on V8 to build network applications
+    - php71 # General-purpose scripting language
     - php71-xdebug
-    - the_silver_searcher
-    - ruby
-    - tldr
-    - tree
-    - wget
+    - the_silver_searcher # Code-search similar to ack
+    - ruby # Powerful, clean, object-oriented scripting language
+    - tldr # Simplified and community-driven man pages
+    - tree # Display directories as trees (with optional color/HTML output)
+    - wget # Internet file retriever
 
 - name: Install Homebrew Casks.
   homebrew_cask: name={{ item }} state=present
   with_items:
-    - 1password
-    - alfred
-    - android-file-transfer
-    - appcleaner
-    - atext
-    - atom
-    - bartender
-    - cacher
-    - calibre
-    - cocktail
-    - db-browser-for-sqlite
-    - diffmerge
-    - dropbox
-    - dynalist
-    - evernote
-    - firefox-developer-edition
-    - fliqlo
-    - fluid
-    - gemini-classic
-    - google-chrome
-    - imageoptim
-    - iterm2
-    - java
-    - jetbrains-toolbox
-    - kindle
-    - logitech-control-center
-    - logitech-options
-    - macx-dvd-ripper-mac-free-edition
-    - mailplane
-    - muzzle
-    - netgeargenie
-    - numi
-    - omnifocus
-    - overdrive-media-console
-    - postman
-    - sequel-pro
-    - skype
-    - slack
-    - snagit3
-    - spectacle
-    - stay
-    - timer
-    - toggl
-    - ubar
-    - vagrant
-    - virtualbox
-    - viscosity
-    - vlc
-    - xee
-    - xmind
-    - zoomus
+    - 1password # https://1password.com/
+    - alfred # https://www.alfredapp.com/
+    - android-file-transfer # https://www.android.com/filetransfer/
+    - appcleaner # https://freemacsoft.net/appcleaner/
+    - atext # https://www.trankynam.com/atext/
+    - atom # https://atom.io/
+    - bartender # https://www.macbartender.com/
+    - cacher # https://www.cacher.io/
+    - calibre # https://calibre-ebook.com/
+    - cocktail # https://www.maintain.se/cocktail/
+    - db-browser-for-sqlite # http://sqlitebrowser.org/
+    - diffmerge # https://www.sourcegear.com/diffmerge/
+    - dropbox # https://www.dropbox.com/
+    - dynalist # https://dynalist.io/
+    - evernote # https://evernote.com/
+    - firefox-developer-edition # https://www.mozilla.org/firefox/developer/
+    - fliqlo # https://fliqlo.com/
+    - fluid # http://fluidapp.com/
+    - gemini-classic # https://macpaw.com/gemini-classic
+    - google-chrome # https://www.google.com/chrome/
+    - imageoptim # https://imageoptim.com/mac
+    - iterm2 # https://www.iterm2.com/
+    - java # https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
+    - jetbrains-toolbox # https://www.jetbrains.com/toolbox/app/
+    - kindle # https://www.amazon.com/gp/digital/fiona/kcp-landing-page
+    - logitech-control-center # https://support.logitech.com/en_us/product/3129
+    - logitech-options # https://support.logitech.com/en_us/software/options
+    - macx-dvd-ripper-mac-free-edition # https://www.macxdvd.com/dvd-ripper-mac-free/
+    - mailplane # https://mailplaneapp.com/
+    - muzzle # https://muzzleapp.com/
+    - netgeargenie # https://www.netgear.com/home/discover/apps/genie.aspx
+    - numi # https://numi.io/
+    - omnifocus # https://www.omnigroup.com/omnifocus/
+    - overdrive-media-console # https://www.overdrive.com/
+    - postman # https://www.getpostman.com/
+    - sequel-pro # https://www.sequelpro.com/
+    - skype # https://www.skype.com/
+    - slack # https://slack.com/
+    - snagit3 # https://www.techsmith.com/snagit.html
+    - spectacle # https://www.spectacleapp.com/
+    - stay # https://cordlessdog.com/stay/
+    - timer # https://www.apimac.com/mac/timer/
+    - toggl # https://www.toggl.com/
+    - ubar # https://brawersoftware.com/products/ubar
+    - vagrant # https://www.vagrantup.com/
+    - virtualbox # https://www.virtualbox.org/
+    - viscosity # https://www.sparklabs.com/viscosity/
+    - vlc # https://www.videolan.org/vlc/
+    - xee # https://theunarchiver.com/xee
+    - xmind # https://www.xmind.net/
+    - zoomus # https://www.zoom.us/
