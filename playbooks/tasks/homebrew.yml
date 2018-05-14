@@ -17,6 +17,7 @@
     - git
     - gpatch # https://docs.acquia.com/article/fixing-failing-composer-patches-updating-gnu-patch
     - graphviz
+    - httpie
     - hub
     - mas
     - node
