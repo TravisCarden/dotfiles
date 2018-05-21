@@ -22,7 +22,6 @@
     - mas # Mac App Store command-line interface
     - node # Platform built on V8 to build network applications
     - php71 # General-purpose scripting language
-    - php71-xdebug
     - the_silver_searcher # Code-search similar to ack
     - ruby # Powerful, clean, object-oriented scripting language
     - tldr # Simplified and community-driven man pages
