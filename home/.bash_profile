@@ -39,6 +39,9 @@ shopt -s histappend
 # Non-public features.
 source_if_exists ~/Dropbox/.bash_secret
 
+# Acquia Dev Desktop.
+export PATH="$PATH:/Applications/DevDesktop/tools"
+
 # BLT "alias". See https://github.com/acquia/blt.
 function blt() {
   if [ "`git rev-parse --show-cdup 2> /dev/null`" != "" ]; then
