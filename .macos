@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+# NAME
+#     .macos - Sets application preferences.
+#
+# SYNOPSIS
+#     ./.macos
+#
+# DESCRIPTION
+#     .macos sets individual application preferences when it is impossible or
+#     undesirable to manage entire PLIST files. The filename is taken from
+#     https://mths.be/dotfiles.
+
+
+# ------------------------------------------------------------------------------
+# DOCK
+# ------------------------------------------------------------------------------
+
+# Hide Dock.
+defaults write com.apple.dock autohide-time-modifier -int 0
+defaults write com.apple.dock autohide-delay -float 999
+
+# Remove all persistent apps.
+defaults write com.apple.dock persistent-apps -array
+
+
+# ------------------------------------------------------------------------------
+# MISCELLANEOUS
+# ------------------------------------------------------------------------------
+
+# Completely hide the Dashboard.
+defaults write com.apple.dashboard mcx-disabled -bool true
+
+# Hide Desktop icons.
+defaults write com.apple.finder CreateDesktop -bool false
+
+# Globally enable text replacement.
+defaults write -g WebAutomaticTextReplacementEnabled -bool true
+
+
+# ------------------------------------------------------------------------------
+# RESTART AFFECTED APPLICATIONS
+# ------------------------------------------------------------------------------
+
+declare -a apps=(
+  "Dock"
+  "Finder"
+)
+for APP in "${apps[@]}"; do
+  killall "$APP"
+done
