@@ -25,6 +25,14 @@ defaults write com.apple.dock persistent-apps -array
 
 
 # ------------------------------------------------------------------------------
+# FANTASTICAL
+# ------------------------------------------------------------------------------
+
+# Always play sound for event alerts.
+defaults write com.flexibits.fantastical2.mac AlwaysPlaySoundForEventAlerts -bool YES
+
+
+# ------------------------------------------------------------------------------
 # MISCELLANEOUS
 # ------------------------------------------------------------------------------
 
