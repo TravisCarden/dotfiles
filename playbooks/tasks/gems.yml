@@ -4,3 +4,4 @@
   gem: name={{ item }} state=present user_install=no
   with_items:
     - bundler
+    - github_changelog_generator
