@@ -29,9 +29,3 @@
     src: ~/Projects/Work/drush/drush
     path: /usr/local/bin/drush
     state: link
-
-- name: Install Git Release Notes module.
-  shell: >
-    drush dl grn
-    chdir=~/.drush
-    creates=~/.drush/grn/grn.drush.inc
