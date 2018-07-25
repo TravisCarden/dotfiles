@@ -12,7 +12,7 @@
 #     .drush_prompt displays Git repository and Drush alias status in your prompt. See
 #     https://github.com/drush-ops/drush/blob/master/examples/example.prompt.sh.
 
-if [ -n "$(type -t __git_ps1)" ] && [ "$(type -t __git_ps1)" = function ] && [ "$(type -t __drush_ps1)" ] && [ "$(type -t __drush_ps1)" = function ]; then
+if [ -n "$(type -t __git_ps1)" ] && [ "$(type -t __git_ps1)" = function ]; then
 
   COLOR_BLUE='\[\e[34m\]'
   COLOR_CYAN='\[\e[36m\]'
@@ -60,6 +60,11 @@ if [ -n "$(type -t __git_ps1)" ] && [ "$(type -t __git_ps1)" = function ] && [ "
   GIT_PS1_SHOWSTASHSTATE=true
   DRUSH_PS1_SHOWCOLORHINTS=true
 
-  export PROMPT_COMMAND='__git_ps1 "${COLOR_BLUE}$(date +%r) \w${COLOR_NONE}" "$(__drush_ps1 " [%s]") \\\$ "; echo -ne "\033]1;$(dir_details)\007"'
+  DRUSH_PSI=''
+  if [ "$(type -t __drush_ps1)" ] && [ "$(type -t __drush_ps1)" = function ]; then
+    DRUSH_PSI=$(__drush_ps1 " [%s]")
+  fi
+
+  export PROMPT_COMMAND='__git_ps1 "${COLOR_BLUE}$(date +%r) \w${COLOR_NONE}" "${DRUSH_PSI} \\\$ "; echo -ne "\033]1;$(dir_details)\007"'
 
 fi
