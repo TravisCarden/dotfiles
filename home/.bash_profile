@@ -55,6 +55,9 @@ function blt() {
   fi
 }
 
+# Composer.
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
 # Homebrew.
 export PATH="/usr/local/sbin:$PATH"
 

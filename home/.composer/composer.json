@@ -1,6 +1,7 @@
 {
     "require": {
         "bamarni/symfony-console-autocomplete": "^1.2",
-        "hirak/prestissimo": "^0.3.6"
+        "hirak/prestissimo": "^0.3.6",
+        "drush/drush": "^9.3"
     }
 }
