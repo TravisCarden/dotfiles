@@ -1,10 +1,11 @@
 *.retry
 .idea
 home/.composer/cache
-home/.composer/vendor
 home/.composer/keys.*.pub
+home/.composer/vendor
 home/.drush/cache/
 home/.drush/grn/
 home/.ssh/id_rsa
 home/.ssh/id_rsa.pub
 home/.ssh/known_hosts
+Preferences/Alfred.alfredpreferences/workflows/user.workflow.96B3F6A1-75CF-4F8A-926D-67FD8A7D2DC1/bin/checkjabberstatus.scpt
