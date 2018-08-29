@@ -23,7 +23,6 @@ alias ll='ls -l'
 alias git-root='cd "$(git rev-parse --show-toplevel)"'
 
 # Prompt.
-source_if_exists ~/Projects/Work/drush/drush.complete.sh
 source_if_exists `brew --prefix`/etc/bash_completion.d/git-prompt.sh
 source_if_exists ~/.drush/drush.prompt.sh
 
