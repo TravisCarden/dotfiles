@@ -74,3 +74,6 @@ source_if_exists /usr/local/opt/homeshick/homeshick.sh
 
 # iTerm.
 source_if_exists ~/.iterm2_shell_integration.bash
+
+# SQLite
+export PATH="/usr/local/opt/sqlite/bin:$PATH"
