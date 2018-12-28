@@ -3,6 +3,7 @@
         "bamarni/symfony-console-autocomplete": "^1.2",
         "hirak/prestissimo": "^0.3.6",
         "drush/drush": "^9.3",
-        "localheinz/composer-normalize": "^0.8.0"
+        "localheinz/composer-normalize": "^0.8.0",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     }
 }
