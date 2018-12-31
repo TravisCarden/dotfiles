@@ -18,6 +18,7 @@ alias dr=drush
 alias la='ls -a'
 alias lal='ls -al'
 alias ll='ls -l'
+alias orca="/Users/travis.carden/Projects/Work/orca/bin/orca"
 # cd to the root of a Git repository.
 # See https://stackoverflow.com/a/957978/895083.
 alias git-root='cd "$(git rev-parse --show-toplevel)"'
