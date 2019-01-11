@@ -62,7 +62,6 @@ function blt() {
   fi
 }
 
-
 # Composer.
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
@@ -75,6 +74,10 @@ source_if_exists /usr/local/opt/homeshick/homeshick.sh
 
 # iTerm.
 source_if_exists ~/.iterm2_shell_integration.bash
+
+# PHP.
+export PATH="/usr/local/opt/php@7.1/bin:$PATH"
+export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
 
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
