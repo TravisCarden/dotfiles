@@ -15,6 +15,7 @@
     - composer # Dependency Manager for PHP
     - dos2unix # Convert text between DOS, UNIX, and Mac formats
     - git # Distributed revision control system
+    - git-flow # Extensions to follow Vincent Driessen's branching model
     - gpatch # Apply a diff file to an original
     - graphviz # Graph visualization software from AT&T and Bell Labs
     - httpie # User-friendly cURL replacement (command-line HTTP client)
