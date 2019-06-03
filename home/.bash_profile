@@ -75,6 +75,13 @@ source_if_exists /usr/local/opt/homeshick/homeshick.sh
 # iTerm.
 source_if_exists ~/.iterm2_shell_integration.bash
 
+# phpenv.
+export PHPENV_ROOT="$HOME/.phpenv"
+if [ -d "${PHPENV_ROOT}" ]; then
+  export PATH="${PHPENV_ROOT}/bin:${PATH}"
+  eval "$(phpenv init -)"
+fi
+
 # PHP.
 export PATH="/usr/local/opt/php@7.1/bin:$PATH"
 export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
