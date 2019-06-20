@@ -82,9 +82,5 @@ if [ -d "${PHPENV_ROOT}" ]; then
   eval "$(phpenv init -)"
 fi
 
-# PHP.
-export PATH="/usr/local/opt/php@7.1/bin:$PATH"
-export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
-
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
