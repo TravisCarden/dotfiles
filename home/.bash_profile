@@ -29,6 +29,7 @@ source_if_exists ~/.drush/drush.prompt.sh
 
 # Completion.
 source_if_exists `brew --prefix`/etc/bash_completion
+eval $(orca _completion --generate-hook)
 
 # History. See bash(1).
 HISTCONTROL=ignoreboth
