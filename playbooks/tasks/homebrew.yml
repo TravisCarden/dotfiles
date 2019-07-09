@@ -5,7 +5,6 @@
   with_items:
     - caskroom/drivers
     - caskroom/versions
-    - homebrew/homebrew-php
 
 - name: Install Homebrew packages.
   homebrew: name={{ item }} state=present
@@ -22,7 +21,6 @@
     - hub # Add GitHub support to git on the command-line
     - mas # Mac App Store command-line interface
     - node # Platform built on V8 to build network applications
-    - php71 # General-purpose scripting language
     - the_silver_searcher # Code-search similar to ack
     - ruby # Powerful, clean, object-oriented scripting language
     - sqlite # Command-line interface for SQLite
