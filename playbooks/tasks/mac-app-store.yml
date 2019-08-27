@@ -9,7 +9,6 @@
   shell: mas list | grep {{ item }} || mas install {{ item }}
   with_items:
     - 937984704 # Amphetamine
-    - 472790630 # Bible Study
     - 1394863440 # Banktivity 7
     - 603117688 # CCMenu
     - 1287239339 # ColorSlurp
