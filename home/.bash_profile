@@ -68,6 +68,8 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # Homebrew.
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt/php@7.2/bin:$PATH"
+export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 
 # Homeshick.
 export HOMESHICK_DIR=/usr/local/opt/homeshick
@@ -75,13 +77,6 @@ source_if_exists /usr/local/opt/homeshick/homeshick.sh
 
 # iTerm.
 source_if_exists ~/.iterm2_shell_integration.bash
-
-# phpenv.
-export PHPENV_ROOT="$HOME/.phpenv"
-if [ -d "${PHPENV_ROOT}" ]; then
-  export PATH="${PHPENV_ROOT}/bin:${PATH}"
-  eval "$(phpenv init -)"
-fi
 
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
