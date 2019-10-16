@@ -7,28 +7,29 @@
     - caskroom/versions
 
 - name: Install Homebrew packages.
-  homebrew: name={{ item }} state=present
-  with_items:
-    - ansible # Automate deployment, configuration, and upgrading
-    - bash-completion # Programmable completion for Bash 3.2
-    - composer # Dependency Manager for PHP
-    - dos2unix # Convert text between DOS, UNIX, and Mac formats
-    - git # Distributed revision control system
-    - git-flow # Extensions to follow Vincent Driessen's branching model
-    - gpatch # Apply a diff file to an original
-    - graphviz # Graph visualization software from AT&T and Bell Labs
-    - httpie # User-friendly cURL replacement (command-line HTTP client)
-    - hub # Add GitHub support to git on the command-line
-    - mas # Mac App Store command-line interface
-    - node # Platform built on V8 to build network applications
-    - php@7.2 # General-purpose scripting language
-    - the_silver_searcher # Code-search similar to ack
-    - ruby # Powerful, clean, object-oriented scripting language
-    - sqlite # Command-line interface for SQLite
-    - terminal-notifier # Send macOS User Notifications from the command-line
-    - tldr # Simplified and community-driven man pages
-    - tree # Display directories as trees (with optional color/HTML output)
-    - wget # Internet file retriever
+  homebrew:
+    name:
+      - ansible # Automate deployment, configuration, and upgrading
+      - bash-completion # Programmable completion for Bash 3.2
+      - composer # Dependency Manager for PHP
+      - dos2unix # Convert text between DOS, UNIX, and Mac formats
+      - git # Distributed revision control system
+      - git-flow # Extensions to follow Vincent Driessen's branching model
+      - gpatch # Apply a diff file to an original
+      - graphviz # Graph visualization software from AT&T and Bell Labs
+      - httpie # User-friendly cURL replacement (command-line HTTP client)
+      - hub # Add GitHub support to git on the command-line
+      - mas # Mac App Store command-line interface
+      - node # Platform built on V8 to build network applications
+      - php@7.2 # General-purpose scripting language
+      - the_silver_searcher # Code-search similar to ack
+      - ruby # Powerful, clean, object-oriented scripting language
+      - sqlite # Command-line interface for SQLite
+      - terminal-notifier # Send macOS User Notifications from the command-line
+      - tldr # Simplified and community-driven man pages
+      - tree # Display directories as trees (with optional color/HTML output)
+      - wget # Internet file retriever
+    state: present
 
 - name: Install Homebrew Casks.
   homebrew_cask: name={{ item }} state=present
