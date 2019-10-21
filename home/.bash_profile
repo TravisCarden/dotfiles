@@ -78,5 +78,17 @@ source_if_exists /usr/local/opt/homeshick/homeshick.sh
 # iTerm.
 source_if_exists ~/.iterm2_shell_integration.bash
 
+# phpenv.
+export PHPENV_ROOT="/Users/travis.carden/.phpenv"
+if [ -d "${PHPENV_ROOT}" ]; then
+  export PATH="${PHPENV_ROOT}/bin:${PATH}"
+  eval "$(phpenv init -)"
+fi
+export PATH="/usr/local/opt/bison/bin:$PATH"
+export PATH="/usr/local/opt/libxml2/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"

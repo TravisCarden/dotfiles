@@ -3,8 +3,7 @@
 - name: Tap Homebrew repositories.
   homebrew_tap: tap={{ item }} state=present
   with_items:
-    - caskroom/drivers
-    - caskroom/versions
+    - homebrew/cask-drivers
 
 - name: Install Homebrew packages.
   homebrew:
@@ -21,7 +20,6 @@
       - hub # Add GitHub support to git on the command-line
       - mas # Mac App Store command-line interface
       - node # Platform built on V8 to build network applications
-      - php@7.2 # General-purpose scripting language
       - the_silver_searcher # Code-search similar to ack
       - ruby # Powerful, clean, object-oriented scripting language
       - sqlite # Command-line interface for SQLite
@@ -29,14 +27,20 @@
       - tldr # Simplified and community-driven man pages
       - tree # Display directories as trees (with optional color/HTML output)
       - wget # Internet file retriever
+      # phpenv dependencies:
+      - bison # Parser generator
+      - libxml2 # GNOME XML library
+      - openssl # SSL/TLS cryptography library
+      - re2c # Generate C-based recognizers from regular expressions
+      - zlib # General-purpose lossless data-compression library
     state: present
 
 - name: Install Homebrew Casks.
   homebrew_cask: name={{ item }} state=present
   with_items:
-    - 1password # https://1password.com/
     - alfred # https://www.alfredapp.com/
     - android-file-transfer # https://www.android.com/filetransfer/
+    - anylist # https://www.anylistapp.com/
     - appcleaner # https://freemacsoft.net/appcleaner/
     - atom # https://atom.io/
     - bartender # https://www.macbartender.com/
@@ -56,15 +60,15 @@
     - gemini-classic # https://macpaw.com/gemini-classic
     - goodsync # https://www.goodsync.com/
     - google-chrome # https://www.google.com/chrome/
-    - highsierramediakeyenabler # http://milgra.com/high-sierra-media-key-enabler.html
     - imageoptim # https://imageoptim.com/mac
+    - istat-menus # https://bjango.com/mac/istatmenus/
     - iterm2 # https://www.iterm2.com/
     - java # https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
     - jetbrains-toolbox # https://www.jetbrains.com/toolbox/app/
     - kindle # https://www.amazon.com/gp/digital/fiona/kcp-landing-page
     - logitech-control-center # https://support.logitech.com/en_us/product/3129
     - logitech-options # https://support.logitech.com/en_us/software/options
-    - macx-dvd-ripper-pro # MacX DVD Ripper Pro
+    - macmediakeyforwarder # http://milgra.com/mac-media-key-forwarder.html
     - mailplane # https://mailplaneapp.com/
     - muzzle # https://muzzleapp.com/
     - overdrive-media-console # https://www.overdrive.com/
@@ -73,6 +77,8 @@
     - slack # https://slack.com/
     - soulver # http://www.acqualia.com/soulver/
     - spectacle # https://www.spectacleapp.com/
+    - spotifree # http://spotifree.gordinskiy.com/
+    - spotify # https://www.spotify.com/
     - stay # https://cordlessdog.com/stay/
     - timer # https://www.apimac.com/mac/timer/
     - ubar # https://brawersoftware.com/products/ubar
