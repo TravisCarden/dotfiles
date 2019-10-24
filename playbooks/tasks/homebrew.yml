@@ -67,9 +67,10 @@
     - jetbrains-toolbox # https://www.jetbrains.com/toolbox/app/
     - kindle # https://www.amazon.com/gp/digital/fiona/kcp-landing-page
     - logitech-control-center # https://support.logitech.com/en_us/product/3129
-    - logitech-options # https://support.logitech.com/en_us/software/options
+    # - logitech-options # https://support.logitech.com/en_us/software/options
     - macmediakeyforwarder # http://milgra.com/mac-media-key-forwarder.html
     - mailplane # https://mailplaneapp.com/
+    - mutespotifyads # https://github.com/simonmeusel/MuteSpotifyAds
     - muzzle # https://muzzleapp.com/
     - overdrive-media-console # https://www.overdrive.com/
     - postman # https://www.getpostman.com/
@@ -77,8 +78,8 @@
     - slack # https://slack.com/
     - soulver # http://www.acqualia.com/soulver/
     - spectacle # https://www.spectacleapp.com/
-    - spotifree # http://spotifree.gordinskiy.com/
     - spotify # https://www.spotify.com/
+    - spotmenu # https://github.com/kmikiy/SpotMenu
     - stay # https://cordlessdog.com/stay/
     - timer # https://www.apimac.com/mac/timer/
     - ubar # https://brawersoftware.com/products/ubar
