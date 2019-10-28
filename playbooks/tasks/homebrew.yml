@@ -27,12 +27,6 @@
       - tldr # Simplified and community-driven man pages
       - tree # Display directories as trees (with optional color/HTML output)
       - wget # Internet file retriever
-      # phpenv dependencies:
-      - bison # Parser generator
-      - libxml2 # GNOME XML library
-      - openssl # SSL/TLS cryptography library
-      - re2c # Generate C-based recognizers from regular expressions
-      - zlib # General-purpose lossless data-compression library
     state: present
 
 - name: Install Homebrew Casks.
@@ -57,7 +51,6 @@
     - firefox-developer-edition # https://www.mozilla.org/firefox/developer/
     - fliqlo # https://fliqlo.com/
     - fluid # http://fluidapp.com/
-    - gemini-classic # https://macpaw.com/gemini-classic
     - goodsync # https://www.goodsync.com/
     - google-chrome # https://www.google.com/chrome/
     - imageoptim # https://imageoptim.com/mac
@@ -66,8 +59,8 @@
     - java # https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
     - jetbrains-toolbox # https://www.jetbrains.com/toolbox/app/
     - kindle # https://www.amazon.com/gp/digital/fiona/kcp-landing-page
-    - logitech-control-center # https://support.logitech.com/en_us/product/3129
-    # - logitech-options # https://support.logitech.com/en_us/software/options
+    - logitech-options # https://support.logitech.com/en_us/software/options
+    - macdown # https://macdown.uranusjr.com/
     - macmediakeyforwarder # http://milgra.com/mac-media-key-forwarder.html
     - mailplane # https://mailplaneapp.com/
     - mutespotifyads # https://github.com/simonmeusel/MuteSpotifyAds
@@ -76,16 +69,12 @@
     - postman # https://www.getpostman.com/
     - sequel-pro # https://www.sequelpro.com/
     - slack # https://slack.com/
-    - soulver # http://www.acqualia.com/soulver/
     - spectacle # https://www.spectacleapp.com/
     - spotify # https://www.spotify.com/
-    - spotmenu # https://github.com/kmikiy/SpotMenu
     - stay # https://cordlessdog.com/stay/
-    - timer # https://www.apimac.com/mac/timer/
     - ubar # https://brawersoftware.com/products/ubar
     - vagrant # https://www.vagrantup.com/
     - virtualbox # https://www.virtualbox.org/
     - viscosity # https://www.sparklabs.com/viscosity/
     - vlc # https://www.videolan.org/vlc/
-    - xee # https://theunarchiver.com/xee
     - xmind # https://www.xmind.net/
