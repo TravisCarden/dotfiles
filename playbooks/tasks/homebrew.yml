@@ -24,6 +24,7 @@
       - ruby # Powerful, clean, object-oriented scripting language
       - sqlite # Command-line interface for SQLite
       - terminal-notifier # Send macOS User Notifications from the command-line
+      - tig # Text interface for Git repositories
       - tldr # Simplified and community-driven man pages
       - tree # Display directories as trees (with optional color/HTML output)
       - wget # Internet file retriever
