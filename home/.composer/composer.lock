@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "890e47878cb6213a366792a0fd554217",
+    "content-hash": "26d3d2bfd4bfd5bd31937f631d0fe931",
     "packages": [
         {
             "name": "bamarni/symfony-console-autocomplete",
@@ -930,7 +930,44 @@
             ],
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
+            "abandoned": "psr/container",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "davidrjonas/composer-lock-diff",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davidrjonas/composer-lock-diff.git",
+                "reference": "a3f630aca2da0d19686d47572a6d9b85bfe11a04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davidrjonas/composer-lock-diff/zipball/a3f630aca2da0d19686d47572a6d9b85bfe11a04",
+                "reference": "a3f630aca2da0d19686d47572a6d9b85bfe11a04",
+                "shasum": ""
+            },
+            "bin": [
+                "composer-lock-diff"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Jonas",
+                    "homepage": "https://github.com/davidrjonas"
+                }
+            ],
+            "description": "See what has changed after a composer update.",
+            "time": "2019-09-06T03:06:26+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1594,6 +1631,7 @@
                 "normalizer",
                 "plugin"
             ],
+            "abandoned": "ergebnis/composer-normalize",
             "time": "2018-04-24T13:26:04+00:00"
         },
         {
@@ -1645,6 +1683,7 @@
                 "json",
                 "normalizer"
             ],
+            "abandoned": "ergebnis/json-normalizer",
             "time": "2018-04-07T08:03:24+00:00"
         },
         {
@@ -1694,6 +1733,7 @@
                 "json",
                 "printer"
             ],
+            "abandoned": "ergebnis/json-printer",
             "time": "2018-08-11T23:54:50+00:00"
         },
         {
@@ -2870,7 +2910,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "davidrjonas/composer-lock-diff": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
