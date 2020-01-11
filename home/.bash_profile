@@ -63,6 +63,9 @@ function blt() {
   fi
 }
 
+# General.
+export CLICOLOR=1
+
 # Composer.
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
