@@ -71,8 +71,6 @@ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 # Homebrew.
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/opt/php@7.2/bin:$PATH"
-export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # Homeshick.

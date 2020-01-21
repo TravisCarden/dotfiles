@@ -20,6 +20,7 @@
       - hub # Add GitHub support to git on the command-line
       - mas # Mac App Store command-line interface
       - node # Platform built on V8 to build network applications
+      - brew-php-switcher # Switch Apache / Valet / CLI configs between PHP versions
       - the_silver_searcher # Code-search similar to ack
       - ruby # Powerful, clean, object-oriented scripting language
       - sqlite # Command-line interface for SQLite
