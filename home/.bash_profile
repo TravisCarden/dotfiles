@@ -1,5 +1,3 @@
-#@IgnoreInspection BashAddShebang
-
 function alert {
   time eval $@
   if [ $? -eq 0 ]; then
@@ -14,6 +12,7 @@ function source_if_exists() {
 }
 
 # Aliases.
+alias git-overview="git show-branch; echo; git status"
 alias dr=drush
 alias la='ls -a'
 alias lal='ls -al'
