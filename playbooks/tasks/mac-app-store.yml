@@ -9,11 +9,9 @@
   shell: mas list | grep {{ item }} || mas install {{ item }}
   with_items:
     - 937984704 # Amphetamine
-    - 1394863440 # Banktivity 7
     - 603117688 # CCMenu
     - 1287239339 # ColorSlurp
     - 975937182 # Fantastical 2 - Calendar and Reminders
-    - 990588172 # Gestimer
     - 489690915 # My Medical
     - 1346203938 # OmniFocus
     - 1303222628 # Paprika Recipe Manager 3
@@ -22,7 +20,6 @@
     - 880001334 # Reeder
     - 496437906 # Shush
     - 425424353 # The Unarchiver
-    - 410628904 # Wunderlist
     - 497799835 # Xcode
   register: result
   changed_when: result.stdout.find('Installed') != -1
