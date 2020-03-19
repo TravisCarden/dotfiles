@@ -21,7 +21,10 @@
 	ui = auto
 [user]
 	name = TravisCarden
+	signingkey = 7A804D35669D5366
 [push]
 	default = simple
 [pull]
   ff = only
+[commit]
+	gpgsign = true

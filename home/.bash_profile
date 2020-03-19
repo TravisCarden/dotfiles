@@ -69,6 +69,9 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 # Composer.
 export PATH="$PATH:$HOME/.composer/vendor/bin"
 
+# GPG.
+export GPG_TTY=$(tty)
+
 # Homebrew.
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
