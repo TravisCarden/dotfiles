@@ -1,0 +1,14 @@
+{
+    "config": {
+        "platform": {
+
+        },
+        "discard-changes": true
+    },
+    "repositories": {
+        "drupal": {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    }
+}
