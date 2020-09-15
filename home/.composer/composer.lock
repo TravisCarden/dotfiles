@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca380b7e94cede990e7bcd81de675bd8",
+    "content-hash": "a2306d8528824728c9e1ce51de670d14",
     "packages": [
         {
             "name": "bamarni/symfony-console-autocomplete",
@@ -1163,57 +1163,6 @@
             ],
             "description": "Expands internal property references in a yaml file.",
             "time": "2017-12-16T16:06:03+00:00"
-        },
-        {
-            "name": "hirak/prestissimo",
-            "version": "0.3.10",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hirak/prestissimo.git",
-                "reference": "fb6724d5ee81c96bebd2255175d8c364ac9301e3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hirak/prestissimo/zipball/fb6724d5ee81c96bebd2255175d8c364ac9301e3",
-                "reference": "fb6724d5ee81c96bebd2255175d8c364ac9301e3",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0.0",
-                "ext-curl": "*",
-                "php": "^5.3.2 || ^7.0"
-            },
-            "require-dev": {
-                "composer/composer": "1.0.0",
-                "phpunit/phpunit": "4.8.* || 5.7.* || ^6.3",
-                "squizlabs/php_codesniffer": "^2.5"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Hirak\\Prestissimo\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Hirak\\Prestissimo\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hiraku NAKANO",
-                    "email": "hiraku@tojiru.net"
-                }
-            ],
-            "description": "composer parallel install plugin",
-            "keywords": [
-                "install",
-                "parallel",
-                "speedup"
-            ],
-            "time": "2020-02-16T12:49:55+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -2509,49 +2458,6 @@
             ],
             "description": "A robust cross-platform utility for normalizing, comparing and modifying file paths.",
             "time": "2015-12-17T08:42:14+00:00"
-        },
-        {
-            "name": "zaporylie/composer-drupal-optimizations",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/zaporylie/composer-drupal-optimizations.git",
-                "reference": "fb231d92adc862a2c9276bccbc90f684816dc75d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/zaporylie/composer-drupal-optimizations/zipball/fb231d92adc862a2c9276bccbc90f684816dc75d",
-                "reference": "fb231d92adc862a2c9276bccbc90f684816dc75d",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1"
-            },
-            "require-dev": {
-                "composer/composer": "^1.6",
-                "phpunit/phpunit": "^6"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "zaporylie\\ComposerDrupalOptimizations\\Plugin"
-            },
-            "autoload": {
-                "psr-4": {
-                    "zaporylie\\ComposerDrupalOptimizations\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jakub Piasecki",
-                    "email": "jakub@piaseccy.pl"
-                }
-            ],
-            "description": "Composer plugin to improve composer performance for Drupal projects",
-            "time": "2019-10-02T17:01:11+00:00"
         }
     ],
     "packages-dev": [],
