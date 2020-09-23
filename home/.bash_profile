@@ -12,7 +12,7 @@ function source_if_exists() {
 }
 
 # Aliases.
-alias git-overview="git show-branch; echo; git status"
+alias gito="git show-branch; echo; git status"
 alias dr=drush
 alias la='ls -a'
 alias lal='ls -al'
@@ -85,3 +85,5 @@ source_if_exists ~/.iterm2_shell_integration.bash
 
 # SQLite
 export PATH="/usr/local/opt/sqlite/bin:$PATH"
+
+export PATH="$HOME/.gem/ruby/2.7.0/bin:$PATH"
