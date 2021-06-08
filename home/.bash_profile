@@ -12,12 +12,15 @@ function source_if_exists() {
 }
 
 # Aliases.
+alias c="composer"
 alias gito="git show-branch; echo; git status"
 alias dr=drush
 alias la='ls -a'
 alias lal='ls -al'
 alias ll='ls -l'
 alias orca="COLUMNS=$(tput cols) /Users/travis.carden/Projects/acquia/orca/bin/orca"
+alias composer-stage="COLUMNS=$(tput cols) /Users/travis.carden/Projects/autoupdates/composer-stager/bin/composer-stage"
+alias cs="composer-stage"
 # cd to the root of a Git repository.
 # See https://stackoverflow.com/a/957978/895083.
 alias git-root='cd "$(git rev-parse --show-toplevel)"'
@@ -28,7 +31,6 @@ source_if_exists ~/.drush/drush.prompt.sh
 
 # Completion.
 source_if_exists `brew --prefix`/etc/bash_completion
-[[ ! -f "/Users/travis.carden/Projects/acquia/orca/bin/orca" ]] || eval $(orca _completion --generate-hook)
 
 # History. See bash(1).
 HISTCONTROL=ignoreboth
@@ -37,30 +39,7 @@ HISTFILESIZE=20000
 shopt -s histappend
 
 # Non-public features.
-source_if_exists ~/Dropbox/.bash_secret
-
-# BLT "alias". See https://github.com/acquia/blt.
-function blt() {
-  if [[ ! -z ${AH_SITE_ENVIRONMENT} ]]; then
-    PROJECT_ROOT="/var/www/html/${AH_SITE_GROUP}.${AH_SITE_ENVIRONMENT}"
-  elif [ "`git rev-parse --show-cdup 2> /dev/null`" != "" ]; then
-    PROJECT_ROOT=$(git rev-parse --show-cdup)
-  else
-    PROJECT_ROOT="."
-  fi
-
-  if [ -f "$PROJECT_ROOT/vendor/bin/blt" ]; then
-    $PROJECT_ROOT/vendor/bin/blt "$@"
-
-  # Check for local BLT.
-  elif [ -f "./vendor/bin/blt" ]; then
-    ./vendor/bin/blt "$@"
-
-  else
-    echo "You must run this command from within a BLT-generated project."
-    return 1
-  fi
-}
+source_if_exists ~/.bash_secret
 
 # General.
 export CLICOLOR=1
