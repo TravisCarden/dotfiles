@@ -12,8 +12,7 @@ function source_if_exists() {
 }
 
 # Aliases.
-alias c="composer"
-alias gito="git show-branch; echo; git status"
+alias co="composer"
 alias dr=drush
 alias la='ls -a'
 alias lal='ls -al'
