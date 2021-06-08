@@ -2,6 +2,8 @@
     "require": {
         "bamarni/symfony-console-autocomplete": "^1.2",
         "drush/drush": "^10.0.0",
-        "davidrjonas/composer-lock-diff": "^1.0@dev"
+        "davidrjonas/composer-lock-diff": "^1.0@dev",
+        "ergebnis/composer-normalize": "^2.14",
+        "phpmetrics/phpmetrics": "^2.7"
     }
 }
