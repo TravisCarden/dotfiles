@@ -20,7 +20,7 @@
 [color]
 	ui = auto
 [user]
-	name = TravisCarden
+	name = Travis Carden
 	signingkey = 7A804D35669D5366
 [push]
 	default = simple
