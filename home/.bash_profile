@@ -20,6 +20,8 @@ alias ll='ls -l'
 alias orca="COLUMNS=$(tput cols) /Users/travis.carden/Projects/acquia/orca/bin/orca"
 alias composer-stage="COLUMNS=$(tput cols) /Users/travis.carden/Projects/autoupdates/composer-stager/bin/composer-stage"
 alias cs="composer-stage"
+alias phpdoc="~/.composer/vendor/bin/phpDocumentor.phar --target=var/phpdoc/docs --cache-folder=var/phpdoc/cache --directory=src; open --force var/phpdoc/docs/index.html"
+alias phpmetrics="phpmetrics src --report-html=var/phpmetrics/ --junit=var/phpunit/junit.xml; var/phpmetrics/index.html; open var/phpmetrics/index.html"
 # cd to the root of a Git repository.
 # See https://stackoverflow.com/a/957978/895083.
 alias git-root='cd "$(git rev-parse --show-toplevel)"'

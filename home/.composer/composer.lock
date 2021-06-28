@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e5d8791fd3948f1cf9b26340af15e61e",
+    "content-hash": "9e59ddd638b8dd2c3f54141bf146503b",
     "packages": [
         {
             "name": "bamarni/symfony-console-autocomplete",
@@ -2343,6 +2343,18 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
+        },
+        {
+            "name": "shim/phpdocumentor",
+            "version": "1.0.0",
+            "dist": {
+                "type": "file",
+                "url": "https://phpdoc.org/phpDocumentor.phar"
+            },
+            "bin": [
+                "phpDocumentor.phar"
+            ],
+            "type": "library"
         },
         {
             "name": "symfony/console",

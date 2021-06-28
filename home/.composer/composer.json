@@ -1,9 +1,34 @@
 {
     "require": {
         "bamarni/symfony-console-autocomplete": "^1.2",
-        "drush/drush": "^10.0.0",
         "davidrjonas/composer-lock-diff": "^1.0@dev",
+        "drush/drush": "^10.0.0",
         "ergebnis/composer-normalize": "^2.14",
-        "phpmetrics/phpmetrics": "^2.7"
+        "phpmetrics/phpmetrics": "^2.7",
+        "shim/phpdocumentor": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "shim/phpdocumentor",
+                "version": "1.0.0",
+                "dist": {
+                    "url": "https://phpdoc.org/phpDocumentor.phar",
+                    "type": "file"
+                },
+                "bin": [
+                    "phpDocumentor.phar"
+                ]
+            }
+        }
+    ],
+    "scripts": {
+        "metrics": "phpmetrics -h",
+        "phpdoc": "phpDocumentor.phar --target=var/phpdoc/docs --cache-folder=var/phpdoc/cache --directory; open var/phpdoc/docs/index.html"
+    },
+    "scripts-descriptions": {
+      "metrics": "phpmetrics",
+      "phpdoc": "Generates PhpDoc documentation and opens it in the browser."
     }
 }
