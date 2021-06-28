@@ -22,13 +22,5 @@
                 ]
             }
         }
-    ],
-    "scripts": {
-        "metrics": "phpmetrics -h",
-        "phpdoc": "phpDocumentor.phar --target=var/phpdoc/docs --cache-folder=var/phpdoc/cache --directory; open var/phpdoc/docs/index.html"
-    },
-    "scripts-descriptions": {
-      "metrics": "phpmetrics",
-      "phpdoc": "Generates PhpDoc documentation and opens it in the browser."
-    }
+    ]
 }
