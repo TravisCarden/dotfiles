@@ -1,9 +1,15 @@
 #!/usr/bin/env bash
 
-mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+chsh -s /bin/bash
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+rm -r homebrew
+
+brew install ansible
+
+brew install homeshick
+homeshick clone TravisCarden/dotfiles
 
 ansible-playbook -i playbooks/hosts playbooks/mac.yml
-
-xcode-select --install
 
 ./.macos

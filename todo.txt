@@ -1,8 +1,28 @@
-# Logi
+Connect to Wifi
+Open Terminal
+
+App Store: Install Updates
+
+# Force Ansible brew casks?
+
+# Set password
+# iCloud
+  - Reminders
+# Touch ID.
 
 # Log into 1Password
 
 # Install SSH keys.
+# Configure GPG.
+# GitHub authentication?
+
+# Apps
+- Mailplane
+- Bartender
+
+# Notifictions
+
+# Logi
 
 # Configure Dropbox.
 

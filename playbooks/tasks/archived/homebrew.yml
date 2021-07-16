@@ -45,3 +45,7 @@
     - virtualbox # https://www.virtualbox.org/
     - viscosity # https://www.sparklabs.com/viscosity/
     - vlc # https://www.videolan.org/vlc/
+    # Casks no longer exist.
+    # - java # https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
+    # - rcdefaultapp # http://www.rubicode.com/Software/RCDefaultApp/
+    # - soulver2 # https://www.acqualia.com/soulver/

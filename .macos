@@ -25,7 +25,7 @@ defaults write com.apple.dock persistent-apps -array
 
 
 # ------------------------------------------------------------------------------
-# Composer.
+# COMPOSER
 # ------------------------------------------------------------------------------
 
 # Disable IPv6.
@@ -44,6 +44,21 @@ defaults write com.flexibits.fantastical2.mac AlwaysPlaySoundForEventAlerts -boo
 # ------------------------------------------------------------------------------
 # MISCELLANEOUS
 # ------------------------------------------------------------------------------
+
+# Enable Tap to click for Trackpad.
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
+# Enable Dark Mode.
+defaults write AppleInterfaceStyle -string "Dark"
+
+# Disable menu bar transparency
+defaults write AppleEnableMenuBarTransparency -bool false
+
+# Disable opening and closing window animations.
+defaults write NSAutomaticWindowAnimationsEnabled -bool false
+
+# Enable full keyboard access for all controls.
+defaults write AppleKeyboardUIMode -int 3 normal 2
 
 # Completely hide the Dashboard.
 defaults write com.apple.dashboard mcx-disabled -bool true

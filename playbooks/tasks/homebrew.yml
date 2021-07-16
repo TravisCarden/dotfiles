@@ -26,6 +26,7 @@
 - name: Install Homebrew Casks.
   homebrew_cask: name={{ item }} state=present
   with_items:
+    - 1password # https://1password.com/
     - airtable # https://airtable.com/
     - alfred # https://www.alfredapp.com/
     - anylist # https://www.anylistapp.com/
@@ -49,7 +50,6 @@
     - imageoptim # https://imageoptim.com/mac
     - istat-menus # https://bjango.com/mac/istatmenus/
     - iterm2 # https://www.iterm2.com/
-    - java # https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
     - jetbrains-toolbox # https://www.jetbrains.com/toolbox/app/
     - macmediakeyforwarder # http://milgra.com/mac-media-key-forwarder.html
     - mailplane # https://mailplaneapp.com/
@@ -58,9 +58,7 @@
     - muzzle # https://muzzleapp.com/
     - nordvpn # https://nordvpn.com/
     - qview # https://github.com/jurplel/qView
-    - rcdefaultapp # http://www.rubicode.com/Software/RCDefaultApp/
     - slack # https://slack.com/
-    - soulver2 # https://www.acqualia.com/soulver/
     - spectacle # https://www.spectacleapp.com/
     - spotify # https://www.spotify.com/
     - stay # https://cordlessdog.com/stay/
