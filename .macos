@@ -25,6 +25,15 @@ defaults write com.apple.dock persistent-apps -array
 
 
 # ------------------------------------------------------------------------------
+# Composer.
+# ------------------------------------------------------------------------------
+
+# Disable IPv6.
+# @see https://getcomposer.org/doc/articles/troubleshooting.md#degraded-mode
+networksetup -setv6off Wi-Fi
+
+
+# ------------------------------------------------------------------------------
 # FANTASTICAL
 # ------------------------------------------------------------------------------
 

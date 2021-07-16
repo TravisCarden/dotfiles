@@ -1,0 +1,40 @@
+# Logi
+
+# Log into 1Password
+
+# Install SSH keys.
+
+# Configure Dropbox.
+
+# Configure Chrome Sync.
+
+# Go through System Preferences.
+
+# Configuration captured in Dropbox.
+# Set up shell integration: https://iterm2.com/documentation-shell-integration.html
+
+# Configure iCloud (e.g., from Notes app).
+# Configure Internet accounts.
+# Add printer.
+
+# Configure Ansible.
+# http://www.jeffgeerling.com/blogs/jeff-geerling/better-vagrant-development-workflow
+
+# Install PHP.
+https://getgrav.org/blog/macos-bigsur-apache-multiple-php-versions
+
+# Install PhpStorm via JetBrains Toolbox
+# PhpStorm (incl. global config).
+# https://plugins.jetbrains.com/plugin/7275-codeglance
+# https://plugins.jetbrains.com/plugin/11957-diff--patch-file-support
+# https://plugins.jetbrains.com/plugin/7487-drupal-symfony-bridge
+
+# TODO:
+# - Login items (auto-start)
+
+# Atom plugins.
+# - language-diff
+
+# PhpStorm:
+# settings repository
+# Create command line launcher

@@ -15,6 +15,7 @@
       - gpatch # Apply a diff file to an original
       - hub # Add GitHub support to git on the command-line
       - mas # Mac App Store command-line interface
+      - openssl # Cryptography and SSL/TLS Toolkit
       - the_silver_searcher # Code-search similar to ack
       - sqlite # Command-line interface for SQLite
       - tldr # Simplified and community-driven man pages
