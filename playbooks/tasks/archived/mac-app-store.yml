@@ -1,0 +1,16 @@
+---
+
+- name: Upgrade outdated apps from the Mac App Store.
+  shell: mas upgrade
+  register: result
+  changed_when: result.stdout.find('Everything is up-to-date') != 0
+
+- name: Install Mac App Store apps.
+  shell: mas list | grep {{ item }} || mas install {{ item }}
+  with_items:
+    - 603117688 # CCMenu
+    - 1287239339 # ColorSlurp
+    - 489690915 # My Medical
+    - 1303222628 # Paprika Recipe Manager 3
+  register: result
+  changed_when: result.stdout.find('Installed') != -1

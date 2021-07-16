@@ -1,0 +1,47 @@
+---
+
+- name: Tap Homebrew repositories.
+  homebrew_tap: tap={{ item }} state=present
+  with_items:
+    - homebrew/cask-drivers
+
+- name: Install Homebrew packages.
+  homebrew:
+    name:
+      - bash-completion # Programmable completion for Bash 3.2
+      - dos2unix # Convert text between DOS, UNIX, and Mac formats
+      - graphviz # Graph visualization software from AT&T and Bell Labs
+      - httpie # User-friendly cURL replacement (command-line HTTP client)
+      - node # Platform built on V8 to build network applications
+      - brew-php-switcher # Switch Apache / Valet / CLI configs between PHP versions
+      - ruby # Powerful, clean, object-oriented scripting language
+      - tig # Text interface for Git repositories
+      - terminal-notifier # Send macOS User Notifications from the command-line
+    state: present
+
+- name: Install Homebrew Casks.
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - android-file-transfer # https://www.android.com/filetransfer/
+    - box-sync # https://www.box.com/
+    - calibre # https://calibre-ebook.com/
+    - clickup # https://clickup.com/
+    - cocktail # https://www.maintain.se/cocktail/
+    - db-browser-for-sqlite # http://sqlitebrowser.org/
+    - dropbox # https://www.dropbox.com/
+    - daisydisk # https://daisydiskapp.com/
+    - disk-drill # https://www.cleverfiles.com/
+    - drawio # https://www.draw.io/
+    - eaglefiler # https://c-command.com/eaglefiler/
+    - firefox-developer-edition # https://www.mozilla.org/firefox/developer/
+    - goodsync # https://www.goodsync.com/
+    - kid3 # https://kid3.sourceforge.io/
+    - kindle # https://www.amazon.com/gp/digital/fiona/kcp-landing-page
+    - macdown # https://macdown.uranusjr.com/
+    - overdrive-media-console # https://www.overdrive.com/
+    - postman # https://www.getpostman.com/
+    - sequel-pro # https://www.sequelpro.com/
+    - vagrant # https://www.vagrantup.com/
+    - virtualbox # https://www.virtualbox.org/
+    - viscosity # https://www.sparklabs.com/viscosity/
+    - vlc # https://www.videolan.org/vlc/

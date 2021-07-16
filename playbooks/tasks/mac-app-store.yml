@@ -1,25 +1,18 @@
 ---
 
-- name: Upgrade outdated apps from the Mac App Store.
-  shell: mas upgrade
-  register: result
-  changed_when: result.stdout.find('Everything is up-to-date') != 0
-
 - name: Install Mac App Store apps.
   shell: mas list | grep {{ item }} || mas install {{ item }}
   with_items:
     - 937984704 # Amphetamine
-    - 603117688 # CCMenu
     - 1287239339 # ColorSlurp
     - 975937182 # Fantastical 2 - Calendar and Reminders
-    - 489690915 # My Medical
     - 1346203938 # OmniFocus
-    - 1303222628 # Paprika Recipe Manager 3
     - 1289583905 # Pixelmator Pro
     - 504700302 # PDF Squeezer
     - 880001334 # Reeder
     - 496437906 # Shush
     - 425424353 # The Unarchiver
     - 497799835 # Xcode
+    - 1510445899 # Meeter for Zoom, Teams & Co
   register: result
   changed_when: result.stdout.find('Installed') != -1

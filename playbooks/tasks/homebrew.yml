@@ -9,23 +9,14 @@
   homebrew:
     name:
       - ansible # Automate deployment, configuration, and upgrading
-      - bash-completion # Programmable completion for Bash 3.2
       - composer # Dependency Manager for PHP
-      - dos2unix # Convert text between DOS, UNIX, and Mac formats
       - git # Distributed revision control system
       - git-flow # Extensions to follow Vincent Driessen's branching model
       - gpatch # Apply a diff file to an original
-      - graphviz # Graph visualization software from AT&T and Bell Labs
-      - httpie # User-friendly cURL replacement (command-line HTTP client)
       - hub # Add GitHub support to git on the command-line
       - mas # Mac App Store command-line interface
-      - node # Platform built on V8 to build network applications
-      - brew-php-switcher # Switch Apache / Valet / CLI configs between PHP versions
       - the_silver_searcher # Code-search similar to ack
-      - ruby # Powerful, clean, object-oriented scripting language
       - sqlite # Command-line interface for SQLite
-      - terminal-notifier # Send macOS User Notifications from the command-line
-      - tig # Text interface for Git repositories
       - tldr # Simplified and community-driven man pages
       - tree # Display directories as trees (with optional color/HTML output)
       - wget # Internet file retriever
@@ -34,29 +25,24 @@
 - name: Install Homebrew Casks.
   homebrew_cask: name={{ item }} state=present
   with_items:
+    - airtable # https://airtable.com/
     - alfred # https://www.alfredapp.com/
-    - android-file-transfer # https://www.android.com/filetransfer/
     - anylist # https://www.anylistapp.com/
     - appcleaner # https://freemacsoft.net/appcleaner/
     - atom # https://atom.io/
     - bartender # https://www.macbartender.com/
     - brave-browser # https://brave.com/
-    - calibre # https://calibre-ebook.com/
-    - cocktail # https://www.maintain.se/cocktail/
-    - daisydisk # https://daisydiskapp.com/
-    - db-browser-for-sqlite # http://sqlitebrowser.org/
+    - beekeeper-studio # https://www.beekeeperstudio.io/
     - diffmerge # https://www.sourcegear.com/diffmerge/
-    - disk-drill # https://www.cleverfiles.com/
-    - drawio # https://www.draw.io/
-    - dropbox # https://www.dropbox.com/
+    - dupeguru # https://dupeguru.voltaicideas.net/
     - dynalist # https://dynalist.io/
-    - eaglefiler # https://c-command.com/eaglefiler/
     - evernote # https://evernote.com/
+    - find-any-file # https://apps.tempel.org/FindAnyFile/
     - finicky # https://github.com/johnste/finicky
-    - firefox-developer-edition # https://www.mozilla.org/firefox/developer/
+    - firefox # https://www.mozilla.org/firefox/
     - fliqlo # https://fliqlo.com/
     - fluid # http://fluidapp.com/
-    - goodsync # https://www.goodsync.com/
+    - google-backup-and-sync # https://www.google.com/drive/download/
     - google-chrome # https://www.google.com/chrome/
     - gpg-suite # https://gpgtools.org/
     - imageoptim # https://imageoptim.com/mac
@@ -64,23 +50,19 @@
     - iterm2 # https://www.iterm2.com/
     - java # https://www.oracle.com/technetwork/java/javase/downloads/jdk10-downloads-4416644.html
     - jetbrains-toolbox # https://www.jetbrains.com/toolbox/app/
-    - kindle # https://www.amazon.com/gp/digital/fiona/kcp-landing-page
-    - macdown # https://macdown.uranusjr.com/
     - macmediakeyforwarder # http://milgra.com/mac-media-key-forwarder.html
     - mailplane # https://mailplaneapp.com/
+    - meetingbar # https://github.com/leits/MeetingBar
+    - mutespotifyads # https://github.com/simonmeusel/MuteSpotifyAds
     - muzzle # https://muzzleapp.com/
     - nordvpn # https://nordvpn.com/
-    - overdrive-media-console # https://www.overdrive.com/
-    - postman # https://www.getpostman.com/
-    - sequel-pro # https://www.sequelpro.com/
+    - qview # https://github.com/jurplel/qView
+    - rcdefaultapp # http://www.rubicode.com/Software/RCDefaultApp/
     - slack # https://slack.com/
+    - soulver2 # https://www.acqualia.com/soulver/
     - spectacle # https://www.spectacleapp.com/
-    - spotifree # http://spotifree.gordinskiy.com/
     - spotify # https://www.spotify.com/
     - stay # https://cordlessdog.com/stay/
+    - typora # https://typora.io/
     - ubar # https://brawersoftware.com/products/ubar
-    - vagrant # https://www.vagrantup.com/
-    - virtualbox # https://www.virtualbox.org/
-    - viscosity # https://www.sparklabs.com/viscosity/
-    - vlc # https://www.videolan.org/vlc/
     - xmind # https://www.xmind.net/
